@@ -21,7 +21,7 @@
             <div class="stats shadow">
               <div class="stat">
                 <div class="stat-title">Account Balance</div>
-                <div class="stat-value">9400</div>
+                <div id="current-amount" class="stat-value">9400</div>
               </div>
             </div>
             <div class="divider"></div>
@@ -36,13 +36,14 @@
             <div class="divider"></div>
 
             <!--Add money form start-->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Add Money Amount</span>
                   </label>
-                  <input id="add-money-input"
+                  <input
+                    id="add-money-input"
                     type="text"
                     placeholder="Amount"
                     class="input input-bordered"
@@ -53,7 +54,8 @@
                   <label class="label">
                     <span class="label-text">Pin Number</span>
                   </label>
-                  <input id="pin-number-input"
+                  <input
+                    id="pin-number-input"
                     type="password"
                     placeholder="Pin Number"
                     class="input input-bordered"
@@ -62,16 +64,56 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button id="add-money-btn" class="btn btn-primary">Add money</button>
+                  <button id="add-money-btn" class="btn btn-primary">
+                    Add money
+                  </button>
                 </div>
               </form>
             </div>
             <!--Add money form End-->
+
+            <!--Cash Out money form start-->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash Out Money Amount</span>
+                  </label>
+                  <input
+                    id="cash-out-input"
+                    type="text"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input
+                    id="cash-out-pin-number"
+                    type="password"
+                    placeholder="Pin Number"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cash-out-btn" class="btn btn-primary">
+                    Cash Out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--Cash Out Money Form End-->
           </div>
         </div>
       </div>
     </main>
     <script src="./js/utilities2.js"></script>
     <script src="./js/add-money2.js"></script>
+    <script src="./js/cash-out.js"></script>
   </body>
 </html>
