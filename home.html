@@ -28,15 +28,16 @@
 
             <!--Features starts-->
             <div>
-              <button class="btn">Add Money</button>
-              <button class="btn">Cash Out</button>
+              <button id="show-add-money-form" class="btn">Add Money</button>
+              <button id="show-cash-out-form" class="btn">Cash Out</button>
+              <button id="show-transition-form" class="btn">Transition</button>
             </div>
             <!--Features End-->
 
             <div class="divider"></div>
 
             <!--Add money form start-->
-            <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div id="add-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -73,7 +74,7 @@
             <!--Add money form End-->
 
             <!--Cash Out money form start-->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -108,6 +109,12 @@
               </form>
             </div>
             <!--Cash Out Money Form End-->
+
+            <!--Transition section start-->
+            <div id="transition-history">
+                <h1 class="text-3xl  text-center">Transition History</h1>
+            </div>
+            <!--Transition section end-->
           </div>
         </div>
       </div>
@@ -115,5 +122,6 @@
     <script src="./js/utilities2.js"></script>
     <script src="./js/add-money2.js"></script>
     <script src="./js/cash-out.js"></script>
+    <script src="./js/features.js"></script>
   </body>
 </html>
